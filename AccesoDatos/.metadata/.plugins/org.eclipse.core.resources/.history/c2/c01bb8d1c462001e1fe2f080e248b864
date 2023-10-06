@@ -1,0 +1,42 @@
+package Ejercicio04.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+import Ejercicio04.modelo.LineaPedido;
+
+public class LineaPedidosDao {
+
+	public void insertarLineasPedido(Connection conn, LineaPedido lineaPedido, ResultSet rs) throws SQLException {
+		PreparedStatement pstmt = null;
+		
+		
+		
+		
+		try {
+			
+			pstmt = conn.prepareStatement("insert into pedidos_lineas values (?,?,?,?)");
+			rs.next();
+			pstmt.setLong(1, rs.getInt(1));
+			pstmt.setInt(2, lineaPedido.getNumeroLinea());
+			pstmt.setString(3, lineaPedido.getArticulo());
+			pstmt.setBigDecimal(4, lineaPedido.getPrecio());
+			pstmt.executeUpdate();
+			
+				  
+			
+			
+		} finally {
+			try {
+				pstmt.close();
+			} catch (Exception e) {
+				
+			}
+		}
+
+	}
+
+}

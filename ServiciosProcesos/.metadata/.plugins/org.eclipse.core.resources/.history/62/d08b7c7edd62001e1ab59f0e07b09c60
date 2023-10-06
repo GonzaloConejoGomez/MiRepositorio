@@ -1,0 +1,14 @@
+package lanzadorProcesos;
+
+public class App {
+
+	public static void main(String[] args) {
+		String ruta = "C:\\WINDOWS\\system32\\cmd.exe";
+		LanzadorProcesos lp = new LanzadorProcesos();
+		lp.ejecutar(ruta);
+		
+		
+		System.out.println("Finalizado");
+	}
+
+}
