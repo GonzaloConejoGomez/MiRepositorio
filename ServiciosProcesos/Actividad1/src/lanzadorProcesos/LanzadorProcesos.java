@@ -9,7 +9,7 @@ public class LanzadorProcesos {
 		try {
 			pb = new ProcessBuilder(ruta);
 			pb.start();
-			Process p = new ProcessBuilder("CMD","/C","start","dir").start();
+			
 			Process p1 = new ProcessBuilder("calc").start();
 		
 			

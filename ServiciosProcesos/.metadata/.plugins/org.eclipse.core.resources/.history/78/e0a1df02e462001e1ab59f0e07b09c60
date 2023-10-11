@@ -1,0 +1,21 @@
+package lanzadorProcesos;
+
+
+public class LanzadorProcesos {
+	public void ejecutar(String ruta) {
+
+		ProcessBuilder pb;
+		try {
+			pb = new ProcessBuilder(ruta);
+			pb.start();
+			Process p = new ProcessBuilder("CMD","/C","start","dir").start();
+			System.out.println(p.getOutputStream());
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

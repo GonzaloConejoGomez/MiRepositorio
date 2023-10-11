@@ -1,0 +1,40 @@
+package Ejercicio04.app;
+
+import java.util.GregorianCalendar;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+import Ejercicio04.modelo.LineaPedido;
+import Ejercicio04.modelo.Pedido;
+import Ejercicio04.servicios.PedidosService;
+
+
+
+public class App {
+	public static void main(String[] args) {
+		PedidosService service = new PedidosService();
+		Pedido pedido = new Pedido();
+		LineaPedido articulo1 = new LineaPedido();
+		LineaPedido articulo2 = new LineaPedido();
+		List<LineaPedido> articulos = new ArrayList<>();
+		articulos.add(articulo1);
+		articulos.add(articulo2);
+		LocalDate fechaPedido = LocalDate.of(2021, 4, 1);
+		LocalDate fechaEntrega = LocalDate.of(2021, 5, 3);
+	
+		
+		pedido.setIdPedido((long) 1);
+		pedido.setFechaPedido(fechaPedido);
+		pedido.setFechaEntrega(fechaEntrega);
+		pedido.setCliente("Gonzalo");
+		pedido.setLineasPedido(articulos);
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

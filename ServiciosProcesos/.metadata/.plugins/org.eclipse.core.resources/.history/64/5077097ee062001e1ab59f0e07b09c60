@@ -1,0 +1,14 @@
+package lanzadorProcesos;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		LanzadorProcesos lp = new LanzadorProcesos();
+		lp.ejecutar();
+		
+		
+		System.out.println("Hola");
+	}
+
+}
