@@ -1,0 +1,38 @@
+package Prueba;
+
+
+public class LanzadorProcesos {
+	public void ejecutarNotepad(String ruta) {
+
+		
+		try {
+			
+			Process p = new ProcessBuilder("CMD","/C","start","dir").start();
+			
+		
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void ejecutarCalc() {
+
+		
+		try {
+			
+			
+			Process p = new ProcessBuilder("calc").start();
+			
+		
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
