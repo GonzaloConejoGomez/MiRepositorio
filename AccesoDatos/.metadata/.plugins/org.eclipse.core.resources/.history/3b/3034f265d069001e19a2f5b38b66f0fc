@@ -1,0 +1,25 @@
+package CeuFct.dao;
+
+import java.sql.Connection;
+
+import CeuFct.modelo.Fecha;
+import CeuFct.modelo.Registro;
+
+public class RegistrosDao {
+
+	// Consulta un registro con id y una fecha, devuelve un registro. (Se hace con
+	// PreparedStatement).
+	public Registro ConsultarRegistroFecha(Connection conn, Long id, Fecha fecha) {
+
+	}
+
+	// Devuelve una lista con todos los registros.
+	public List<Registro> ConsultarRegistro(Connection conn, Long id) {
+
+	}
+	
+	//Inserta un registro
+	public long InsertarRegistro(Connection conn, Registro registro) {
+		
+	}
+}

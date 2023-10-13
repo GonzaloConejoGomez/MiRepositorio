@@ -1,0 +1,5 @@
+package CeuFct.dao;
+
+public class UsuarioDao {
+
+}
