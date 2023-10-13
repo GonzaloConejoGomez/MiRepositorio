@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module CeuFct {
-	requires java.sql;
-}
